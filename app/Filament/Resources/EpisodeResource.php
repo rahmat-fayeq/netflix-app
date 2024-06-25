@@ -51,8 +51,8 @@ class EpisodeResource extends Resource
                 Section::make('Urls')->columns(4)->schema([
                     TextInput::make('poster_path')->url(),
                     TextInput::make('backdrop_path')->url(),
-                    TextInput::make('video_path')->url(),
-                    TextInput::make('trailer_path')->url(),
+                    TextInput::make('video_url')->url(),
+                    TextInput::make('trailer_url')->url(),
                 ])
             ]);
     }
