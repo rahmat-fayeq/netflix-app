@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Serie;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -22,6 +23,7 @@ return new class extends Migration
             $table->string('trailer_url');
             $table->string('video_url');
             $table->integer('view_count')->default(0);
+            $table->foreignIdFor(Serie::class);
             $table->timestamps();
         });
     }
