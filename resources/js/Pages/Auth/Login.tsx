@@ -84,7 +84,7 @@ export default function Login({
 
                 <div className="flex flex-col mt-4 justify-center items-center">
                     <PrimaryButton className="w-full" disabled={processing}>
-                        Sign In
+                        {processing ? "Processing..." : "Sign In"}
                     </PrimaryButton>
 
                     <div className="mt-4 text-center">
